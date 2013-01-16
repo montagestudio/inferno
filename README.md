@@ -15,6 +15,19 @@ make
 sudo make install
 ```
 
+Create a ```config.json``` at the root of the inferno application:
+
+```javascript
+{
+    "trello": {
+        "key": "KEY_GOES_HERE",
+        "secret": "SECRET_HERE"
+    },
+    "sessionSecret": "SESSION_SECRET_HERE"
+}
+```
+[Trello Key Information](https://trello.com/1/appKey/generate)
+
 To run
 ======
 ```
