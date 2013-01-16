@@ -1,0 +1,11 @@
+User <%= name %>
+
+Boards
+<ul>
+	<% boards.forEach(function (board) { %>
+		<li>
+			<a href="<%= board.url %>"><%= board.name %></a>
+			<a href="/boards/<%= board.id %>/burndown">Burndown</a>
+		</li>
+	<% })%>
+</ul>
